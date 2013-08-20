@@ -10,13 +10,6 @@
 
 		<link href='bootstrap/css/bootstrap.min.css' rel='stylesheet'>    
 		<link href='bootstrap/css/docs.css' rel='stylesheet'>
-		
-		<style type="text/css">
-			.affix{
-				top: 10px;
-			}
-		</style>
-		
 	</head>
 
 	<body>	
