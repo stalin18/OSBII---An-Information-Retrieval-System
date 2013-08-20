@@ -86,12 +86,12 @@ public class ArticleSaver extends HttpServlet {
 		JSONArray articlesArray = (JSONArray)articlesObject.get("articles");
 		
 		// initialise mongoclient, db and collection
-        mongoClient = MongoConnector.getConnection();
-        db = mongoClient.getDB("osbii");
-        collection = db.getCollection("articles");
-        // get solr server instance
-        solr = SolrConnector.getSolr();
-        try{
+	        mongoClient = MongoConnector.getConnection();
+	        db = mongoClient.getDB("osbii");
+	        collection = db.getCollection("articles");
+	        // get solr server instance
+	        solr = SolrConnector.getSolr();
+	        try{
 			// iterate through each articles array which is an arraylist and from each article which is a map, extract value of 'summary' key
 			for(int i=0; i<articlesArray.size(); i++){
 				// parse and get the article array from articles array
