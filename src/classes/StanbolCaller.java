@@ -65,14 +65,14 @@ public class StanbolCaller {
 		StringBuilder jsonResult = new StringBuilder();
 		
 		try {		
-		  BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
-	      String line = "";
+			BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
+	      		String line = "";
 			while ((line = rd.readLine()) != null) {
 			    //System.out.println(line);
 			    jsonResult.append(line);
 			}
 		} 
-	    catch (IllegalStateException | IOException e1) {
+	    	catch (IllegalStateException | IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
