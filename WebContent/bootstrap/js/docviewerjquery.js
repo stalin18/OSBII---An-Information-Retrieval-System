@@ -120,10 +120,9 @@ $('#back-button').click(function(){
 // CHOOSE BEST BUTTON CLICK HANDLER
 $('#choose-best-button').click(function(){
 	$('#annotated-text').each(function(){
-		$(this)
-        .annotate('acceptAll', function(report){
-            console.log('AcceptAll finished with the report:', report);
-        });
+	        $(this).annotate('acceptAll', function(report){
+	            console.log('AcceptAll finished with the report:', report);
+	        });
 	});
 });
 
