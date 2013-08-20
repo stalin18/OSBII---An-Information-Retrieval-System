@@ -209,7 +209,7 @@ public class ArticleSaver extends HttpServlet {
 					}
 				}
 			}
-        } 
+        	} 
 		catch (SolrServerException sse){
 			sse.printStackTrace();
 		}
